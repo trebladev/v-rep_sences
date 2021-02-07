@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/simConst.h
+
+../remoteApi/extApi.h
+extApiPlatform.h
+../remoteApi/extApiPlatform.h
+simConst.h
+../remoteApi/simConst.h
+
+../remoteApi/extApiPlatform.h
+stdint.h
+-
+
+/home/xuan/v-rep_sences/signal_gait/main.cpp
+iostream
+-
+stdlib.h
+-
+extApi.h
+-
+
+/home/xuan/v-rep_sences/signal_gait/src/position_control.cpp
+position_control.h
+/home/xuan/v-rep_sences/signal_gait/src/position_control.h
+
+/home/xuan/v-rep_sences/signal_gait/src/position_control.h
+
