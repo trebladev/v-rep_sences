@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/params.o: src/params.cpp.o
+
+.PHONY : src/params.o
+
+# target to build an object file
+src/params.cpp.o:
+	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/src/params.cpp.o
+.PHONY : src/params.cpp.o
+
+src/params.i: src/params.cpp.i
+
+.PHONY : src/params.i
+
+# target to preprocess a source file
+src/params.cpp.i:
+	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/src/params.cpp.i
+.PHONY : src/params.cpp.i
+
+src/params.s: src/params.cpp.s
+
+.PHONY : src/params.s
+
+# target to generate assembly for a file
+src/params.cpp.s:
+	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/src/params.cpp.s
+.PHONY : src/params.cpp.s
+
 src/position_control.o: src/position_control.cpp.o
 
 .PHONY : src/position_control.o
@@ -219,6 +246,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/params.o"
+	@echo "... src/params.i"
+	@echo "... src/params.s"
 	@echo "... src/position_control.o"
 	@echo "... src/position_control.i"
 	@echo "... src/position_control.s"

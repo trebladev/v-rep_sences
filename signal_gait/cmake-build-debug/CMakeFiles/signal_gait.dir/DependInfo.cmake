@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/xuan/v-rep_sences/signal_gait/lib/b0RemoteApi.cpp" "/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.o"
   "/home/xuan/v-rep_sences/signal_gait/main.cpp" "/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles/signal_gait.dir/main.cpp.o"
+  "/home/xuan/v-rep_sences/signal_gait/src/params.cpp" "/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles/signal_gait.dir/src/params.cpp.o"
   "/home/xuan/v-rep_sences/signal_gait/src/position_control.cpp" "/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles/signal_gait.dir/src/position_control.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

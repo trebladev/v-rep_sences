@@ -9,6 +9,6 @@ include_directories("lib/bindings")
 include_directories("lib")
 link_directories("lib")
 
-add_executable(signal_gait main.cpp src/position_control.cpp src/position_control.h lib/b0RemoteApi.cpp lib/b0RemoteApi.h)
+add_executable(signal_gait main.cpp src/position_control.cpp src/position_control.h lib/b0RemoteApi.cpp lib/b0RemoteApi.h src/params.cpp src/params.h)
 
 target_link_libraries(signal_gait b0)

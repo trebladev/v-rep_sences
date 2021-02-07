@@ -7,6 +7,24 @@
 
 #define PI 3.1415926535897932384626433832795
 
+enum States {
+    STOP = 0,
+    TROT = 1,
+    BOUND = 2,
+    WALK = 3,
+    PRONK = 4,
+    JUMP = 5,
+    DANCE = 6,
+    HOP = 7,
+    TEST = 8,
+    ROTATE = 9,
+    FLIP = 10,
+    TURN_TROT = 11,
+    RESET = 12
+};
+
+
+
 struct GaitParams {
     float stance_height = 0.18; // 行走时期望身体距离地面的高度 (m)
     float down_amp = 0.00; // 正弦轨迹中低于stanceheight的峰值振幅 (m)
@@ -22,5 +40,5 @@ void SinTrajectory (float t, struct GaitParams params, float gaitOffset, float& 
 void CartesianToLegParams(float x, float y, float leg_direction, float& L, float& theta);
 void CartesianToThetaGamma(float x, float y, float leg_direction, float& theta, float& gamma);
 void GetGamma(float L, float theta, float& gamma);
-
+void CoupledMoveLeg(float t, struct GaitParams params, float gait_offset, float leg_direction,float& theta, float& gamma);
 #endif //SIGNAL_GAIT_POSITION_CONTROL_H

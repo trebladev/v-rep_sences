@@ -44,8 +44,8 @@ void CartesianToLegParams(float x, float y, float leg_direction, float& L, float
  * @param gamma
  */
 void GetGamma(float L, float theta, float& gamma) {
-    float L1 = 0.09; // upper leg length (m)
-    float L2 = 0.162; // lower leg length (m)
+    float L1 = 0.08; // upper leg length (m)
+    float L2 = 0.15; // lower leg length (m)
     float cos_param = (pow(L1,2.0) + pow(L,2.0) - pow(L2,2.0)) / (2.0*L1*L);
     if (cos_param < -1.0) {
         gamma = PI;
@@ -72,7 +72,6 @@ void GetGamma(float L, float theta, float& gamma) {
  */
 void SinTrajectory (float t, struct GaitParams params, float gaitOffset, float& x, float& y) {
     static float p = 0;
-    static float prev_t = 0;
 
     float stanceHeight = params.stance_height;     //直立高度
     float downAMP = params.down_amp;               //下幅值
@@ -81,10 +80,10 @@ void SinTrajectory (float t, struct GaitParams params, float gaitOffset, float& 
     float stepLength = params.step_length;         //整步长
     float FREQ = params.freq;                      //频率
 
-    p += FREQ * (t - prev_t < 0.5 ? t - prev_t : 0); // 当开始一个步态的时候应该减少蹒跚
+    p += FREQ * t; // 当开始一个步态的时候应该减少蹒跚
     // EXP1?EXP2:EXP3 如果EXP1为真，返回EXP2;如果EXP1为假，返回EXP3的值
     // t-prev_t为执行一次控制的时间
-    prev_t = t;
+
 
     float gp = fmod((p+gaitOffset),1.0); // mod(a,m) 返回a除以m的余数
     if (gp <= flightPercent) {                                     // 下半轨迹
@@ -113,4 +112,11 @@ void CartesianToThetaGamma(float x, float y, float leg_direction, float& theta, 
     //Serial << "Th, Gam: " << theta << " " << gamma << '\n';
 }
 
+void CoupledMoveLeg(float t, struct GaitParams params, float gait_offset, float leg_direction,float& theta,float& gamma)
+{
+    float x; // float x for leg 0 to be set by the sin trajectory
+    float y;
+    SinTrajectory(t, params, gait_offset, x, y);
+    CartesianToThetaGamma(x, y, leg_direction, theta, gamma);
+}
 

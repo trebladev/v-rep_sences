@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.o"
   "CMakeFiles/signal_gait.dir/main.cpp.o"
+  "CMakeFiles/signal_gait.dir/src/params.cpp.o"
   "CMakeFiles/signal_gait.dir/src/position_control.cpp.o"
   "signal_gait"
   "signal_gait.pdb"

@@ -99,6 +99,12 @@
 		<Unit filename="/home/xuan/v-rep_sences/signal_gait/main.cpp">
 			<Option target="signal_gait"/>
 		</Unit>
+		<Unit filename="/home/xuan/v-rep_sences/signal_gait/src/params.cpp">
+			<Option target="signal_gait"/>
+		</Unit>
+		<Unit filename="/home/xuan/v-rep_sences/signal_gait/src/params.h">
+			<Option target="signal_gait"/>
+		</Unit>
 		<Unit filename="/home/xuan/v-rep_sences/signal_gait/src/position_control.cpp">
 			<Option target="signal_gait"/>
 		</Unit>
