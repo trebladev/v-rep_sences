@@ -123,6 +123,33 @@ signal_gait/fast:
 	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/build
 .PHONY : signal_gait/fast
 
+lib/b0RemoteApi.o: lib/b0RemoteApi.cpp.o
+
+.PHONY : lib/b0RemoteApi.o
+
+# target to build an object file
+lib/b0RemoteApi.cpp.o:
+	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.o
+.PHONY : lib/b0RemoteApi.cpp.o
+
+lib/b0RemoteApi.i: lib/b0RemoteApi.cpp.i
+
+.PHONY : lib/b0RemoteApi.i
+
+# target to preprocess a source file
+lib/b0RemoteApi.cpp.i:
+	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.i
+.PHONY : lib/b0RemoteApi.cpp.i
+
+lib/b0RemoteApi.s: lib/b0RemoteApi.cpp.s
+
+.PHONY : lib/b0RemoteApi.s
+
+# target to generate assembly for a file
+lib/b0RemoteApi.cpp.s:
+	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.s
+.PHONY : lib/b0RemoteApi.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -149,60 +176,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-remoteApi/extApi.o: remoteApi/extApi.c.o
-
-.PHONY : remoteApi/extApi.o
-
-# target to build an object file
-remoteApi/extApi.c.o:
-	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/remoteApi/extApi.c.o
-.PHONY : remoteApi/extApi.c.o
-
-remoteApi/extApi.i: remoteApi/extApi.c.i
-
-.PHONY : remoteApi/extApi.i
-
-# target to preprocess a source file
-remoteApi/extApi.c.i:
-	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/remoteApi/extApi.c.i
-.PHONY : remoteApi/extApi.c.i
-
-remoteApi/extApi.s: remoteApi/extApi.c.s
-
-.PHONY : remoteApi/extApi.s
-
-# target to generate assembly for a file
-remoteApi/extApi.c.s:
-	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/remoteApi/extApi.c.s
-.PHONY : remoteApi/extApi.c.s
-
-remoteApi/extApiPlatform.o: remoteApi/extApiPlatform.c.o
-
-.PHONY : remoteApi/extApiPlatform.o
-
-# target to build an object file
-remoteApi/extApiPlatform.c.o:
-	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.o
-.PHONY : remoteApi/extApiPlatform.c.o
-
-remoteApi/extApiPlatform.i: remoteApi/extApiPlatform.c.i
-
-.PHONY : remoteApi/extApiPlatform.i
-
-# target to preprocess a source file
-remoteApi/extApiPlatform.c.i:
-	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.i
-.PHONY : remoteApi/extApiPlatform.c.i
-
-remoteApi/extApiPlatform.s: remoteApi/extApiPlatform.c.s
-
-.PHONY : remoteApi/extApiPlatform.s
-
-# target to generate assembly for a file
-remoteApi/extApiPlatform.c.s:
-	$(MAKE) -f CMakeFiles/signal_gait.dir/build.make CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.s
-.PHONY : remoteApi/extApiPlatform.c.s
 
 src/position_control.o: src/position_control.cpp.o
 
@@ -240,15 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... signal_gait"
+	@echo "... lib/b0RemoteApi.o"
+	@echo "... lib/b0RemoteApi.i"
+	@echo "... lib/b0RemoteApi.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... remoteApi/extApi.o"
-	@echo "... remoteApi/extApi.i"
-	@echo "... remoteApi/extApi.s"
-	@echo "... remoteApi/extApiPlatform.o"
-	@echo "... remoteApi/extApiPlatform.i"
-	@echo "... remoteApi/extApiPlatform.s"
 	@echo "... src/position_control.o"
 	@echo "... src/position_control.i"
 	@echo "... src/position_control.s"

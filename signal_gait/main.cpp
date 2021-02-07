@@ -1,32 +1,27 @@
 #include <iostream>
-#include <stdlib.h>
-extern "C"{
-#include <extApi.h>
-}
+#include <position_control.h>
+#include <b0RemoteApi.h>
 
 
 
 
 int main() {
 
-    int Port = 3000;
-    int PositionControlHandle;
-    int clientID = simxStart("127.0.0.1", Port, 1, 1, 1000, 5);
-    if (clientID != -1)
-    {
-        printf("V-rep connected.");
-        while (simxGetConnectionId(clientID) != -1)
-        {
 
-        }
+    float t,prev_t = 0;
+    float position;
+    bool state;
+    b0RemoteApi* cl=NULL;
+    b0RemoteApi client("b0RemoteApi_V-REP","b0RemoteApi");
+    cl=&client;    //为了方便在函数中调用时不用传递类对象参数
 
-        simxFinish(clientID);
+    int motor = client.readInt(client.simxGetObjectHandle("Right_Leg_Motor",client.simxServiceCall()),1);
+
+    client.simxStartSimulation(client.simxDefaultPublisher());
+    while(1) {
+        position = client.readFloat(client.simxGetJointPosition(motor, client.simxServiceCall()), 1);
+        printf("%f\r\n", position);
     }
-    else {
-        printf("V-rep can't be connected.");
-    }
-
-
     //std::cout << "Hello, World!" << std::endl;
     return 0;
 }

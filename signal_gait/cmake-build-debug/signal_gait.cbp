@@ -44,15 +44,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DNON_MATLAB_PARSING"/>
-					<Add option="-DMAX_EXT_API_CONNECTIONS=255"/>
-					<Add option="-DDO_NOT_USE_SHARED_MEMORY"/>
-					<Add option="-D_CONSOLE"/>
-					<Add option="-DNDEBUG"/>
-					<Add directory="/home/xuan/v-rep_sences/signal_gait/include"/>
-					<Add directory="/home/xuan/v-rep_sences/signal_gait/remoteApi"/>
-					<Add directory="/home/xuan/v-rep_sences/signal_gait/include/stack"/>
+					<Add directory="/home/xuan/v-rep_sences/signal_gait/lib/include"/>
 					<Add directory="/home/xuan/v-rep_sences/signal_gait/src"/>
+					<Add directory="/home/xuan/v-rep_sences/signal_gait/lib/bindings"/>
+					<Add directory="/home/xuan/v-rep_sences/signal_gait/lib"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -75,15 +70,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DNON_MATLAB_PARSING"/>
-					<Add option="-DMAX_EXT_API_CONNECTIONS=255"/>
-					<Add option="-DDO_NOT_USE_SHARED_MEMORY"/>
-					<Add option="-D_CONSOLE"/>
-					<Add option="-DNDEBUG"/>
-					<Add directory="/home/xuan/v-rep_sences/signal_gait/include"/>
-					<Add directory="/home/xuan/v-rep_sences/signal_gait/remoteApi"/>
-					<Add directory="/home/xuan/v-rep_sences/signal_gait/include/stack"/>
+					<Add directory="/home/xuan/v-rep_sences/signal_gait/lib/include"/>
 					<Add directory="/home/xuan/v-rep_sences/signal_gait/src"/>
+					<Add directory="/home/xuan/v-rep_sences/signal_gait/lib/bindings"/>
+					<Add directory="/home/xuan/v-rep_sences/signal_gait/lib"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -100,19 +90,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/xuan/v-rep_sences/signal_gait/lib/b0RemoteApi.cpp">
+			<Option target="signal_gait"/>
+		</Unit>
+		<Unit filename="/home/xuan/v-rep_sences/signal_gait/lib/b0RemoteApi.h">
+			<Option target="signal_gait"/>
+		</Unit>
 		<Unit filename="/home/xuan/v-rep_sences/signal_gait/main.cpp">
-			<Option target="signal_gait"/>
-		</Unit>
-		<Unit filename="/home/xuan/v-rep_sences/signal_gait/remoteApi/extApi.c">
-			<Option target="signal_gait"/>
-		</Unit>
-		<Unit filename="/home/xuan/v-rep_sences/signal_gait/remoteApi/extApi.h">
-			<Option target="signal_gait"/>
-		</Unit>
-		<Unit filename="/home/xuan/v-rep_sences/signal_gait/remoteApi/extApiPlatform.c">
-			<Option target="signal_gait"/>
-		</Unit>
-		<Unit filename="/home/xuan/v-rep_sences/signal_gait/remoteApi/extApiPlatform.h">
 			<Option target="signal_gait"/>
 		</Unit>
 		<Unit filename="/home/xuan/v-rep_sences/signal_gait/src/position_control.cpp">

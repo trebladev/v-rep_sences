@@ -70,35 +70,9 @@ CMakeFiles/signal_gait.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/signal_gait.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xuan/v-rep_sences/signal_gait/main.cpp -o CMakeFiles/signal_gait.dir/main.cpp.s
 
-CMakeFiles/signal_gait.dir/remoteApi/extApi.c.o: CMakeFiles/signal_gait.dir/flags.make
-CMakeFiles/signal_gait.dir/remoteApi/extApi.c.o: ../remoteApi/extApi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/signal_gait.dir/remoteApi/extApi.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/signal_gait.dir/remoteApi/extApi.c.o   -c /home/xuan/v-rep_sences/signal_gait/remoteApi/extApi.c
-
-CMakeFiles/signal_gait.dir/remoteApi/extApi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/signal_gait.dir/remoteApi/extApi.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xuan/v-rep_sences/signal_gait/remoteApi/extApi.c > CMakeFiles/signal_gait.dir/remoteApi/extApi.c.i
-
-CMakeFiles/signal_gait.dir/remoteApi/extApi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/signal_gait.dir/remoteApi/extApi.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xuan/v-rep_sences/signal_gait/remoteApi/extApi.c -o CMakeFiles/signal_gait.dir/remoteApi/extApi.c.s
-
-CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.o: CMakeFiles/signal_gait.dir/flags.make
-CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.o: ../remoteApi/extApiPlatform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.o   -c /home/xuan/v-rep_sences/signal_gait/remoteApi/extApiPlatform.c
-
-CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xuan/v-rep_sences/signal_gait/remoteApi/extApiPlatform.c > CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.i
-
-CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xuan/v-rep_sences/signal_gait/remoteApi/extApiPlatform.c -o CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.s
-
 CMakeFiles/signal_gait.dir/src/position_control.cpp.o: CMakeFiles/signal_gait.dir/flags.make
 CMakeFiles/signal_gait.dir/src/position_control.cpp.o: ../src/position_control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/signal_gait.dir/src/position_control.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/signal_gait.dir/src/position_control.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/signal_gait.dir/src/position_control.cpp.o -c /home/xuan/v-rep_sences/signal_gait/src/position_control.cpp
 
 CMakeFiles/signal_gait.dir/src/position_control.cpp.i: cmake_force
@@ -109,23 +83,34 @@ CMakeFiles/signal_gait.dir/src/position_control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/signal_gait.dir/src/position_control.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xuan/v-rep_sences/signal_gait/src/position_control.cpp -o CMakeFiles/signal_gait.dir/src/position_control.cpp.s
 
+CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.o: CMakeFiles/signal_gait.dir/flags.make
+CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.o: ../lib/b0RemoteApi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.o -c /home/xuan/v-rep_sences/signal_gait/lib/b0RemoteApi.cpp
+
+CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xuan/v-rep_sences/signal_gait/lib/b0RemoteApi.cpp > CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.i
+
+CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xuan/v-rep_sences/signal_gait/lib/b0RemoteApi.cpp -o CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.s
+
 # Object files for target signal_gait
 signal_gait_OBJECTS = \
 "CMakeFiles/signal_gait.dir/main.cpp.o" \
-"CMakeFiles/signal_gait.dir/remoteApi/extApi.c.o" \
-"CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.o" \
-"CMakeFiles/signal_gait.dir/src/position_control.cpp.o"
+"CMakeFiles/signal_gait.dir/src/position_control.cpp.o" \
+"CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.o"
 
 # External object files for target signal_gait
 signal_gait_EXTERNAL_OBJECTS =
 
 signal_gait: CMakeFiles/signal_gait.dir/main.cpp.o
-signal_gait: CMakeFiles/signal_gait.dir/remoteApi/extApi.c.o
-signal_gait: CMakeFiles/signal_gait.dir/remoteApi/extApiPlatform.c.o
 signal_gait: CMakeFiles/signal_gait.dir/src/position_control.cpp.o
+signal_gait: CMakeFiles/signal_gait.dir/lib/b0RemoteApi.cpp.o
 signal_gait: CMakeFiles/signal_gait.dir/build.make
 signal_gait: CMakeFiles/signal_gait.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable signal_gait"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xuan/v-rep_sences/signal_gait/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable signal_gait"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/signal_gait.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
